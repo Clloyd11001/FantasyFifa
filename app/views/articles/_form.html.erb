@@ -1,0 +1,5 @@
+# This is the same code as in new.html.erb, but it replaces @article with article
+<div>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</div>
