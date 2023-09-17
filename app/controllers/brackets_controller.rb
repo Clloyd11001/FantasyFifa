@@ -1,36 +1,36 @@
 class BracketsController < ApplicationController
-  include Visible
- 
-  def create_bracket
-      # Generate a Double Elimination bracket template for 8 players
-      template = BracketTree::Template::DoubleElimination.by_size(8)
+  #include Visible
   
-      # Create a blank bracket based on the template
-      bracket = BracketTree::Bracket::DoubleElimination.new(template)
+def new
+    @bracket = Bracket.new
+  end
   
-      # Seed the bracket with player data
-      players = [
-        { player: 'Player1' },
-        { player: 'Player2' },
-        # Add more players as needed
-      ]
-  
-      bracket.seed(players)
-  
-      # Now you can work with the bracket, record match results, etc.
-      # ...
-  
-      render json: { message: 'Bracket created successfully' }
-    end
-  
-    def show_bracket
-      # Load the bracket data based on the ID, assuming you have a Bracket model
-      
-      @bracket = Bracket.find(params[:id])
-    end
+def create
+    bracket_params = params.require(:bracket).permit(:player, :team)
+    @bracket = Bracket.new(bracket_params)
 
+  if @bracket.save
+    # Generate a Double Elimination bracket template for the number of players
+    num_players = 12 # Change this to the appropriate number
+    template = BracketTree::Template::DoubleElimination.by_size(num_players)
 
-    def render_bracket(bracket)
+    # Seed the bracket with player data
+    players = [
+      { player: @bracket.player },
+      # Add more players as needed
+    ]
+
+    bracket = BracketTree::Bracket::DoubleElimination.new(template)
+    bracket.seed(players)
+
+    # Now you can work with the bracket, record match results, etc.
+    # ...
+
+    render json: { message: 'Bracket created successfully' }
+  else
+    render :new # Render the form again with errors if the save fails
+
+def render_bracket(bracket)
     output = ''
     bracket.rounds.each do |round|
       round.matches.each do |match|
@@ -43,6 +43,6 @@ class BracketsController < ApplicationController
     end
     output.html_safe
   end
-  
-  end
-  
+end
+end
+end

@@ -1,3 +1,13 @@
-<!-- You can display a message or a form here if needed -->
-<h1>Create Bracket</h1>
-<p>This is the create bracket page.</p>
+<%= form_with(model: @bracket, url: create_bracket_brackets_path, method: :post) do |form| %>
+    <div class="field">
+      <%= form.label :player, "Player Name" %>
+      <%= form.text_field :player %>
+    </div>
+   
+    <!-- Add more bracket fields as needed -->
+  
+    <div class="actions">
+      <%= form.submit "Create Player" %>
+    </div>
+  <% end %>
+  

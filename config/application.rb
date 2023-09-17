@@ -2,7 +2,7 @@ require_relative "boot"
 
 require "rails/all"
 
-#require "bracket_tree"
+require "bracket_tree"
 
 
 # Require the gems listed in Gemfile, including any gems

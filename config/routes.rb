@@ -5,10 +5,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  # Add the brackets resources
-  resources :brackets, only: [:create, :show, :new] do
-    member do
-      get :render_bracket # Add a custom route for render_bracket action
+  resources :brackets do
+    collection do
+      post 'create_bracket'
     end
   end
 end
