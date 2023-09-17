@@ -1,0 +1,21 @@
+<!-- app/views/tournament/show_bracket.html.erb -->
+<h1>Tournament Bracket</h1>
+
+<div class="bracket">
+  <!-- Loop through bracket data and display it -->
+  <%= render_bracket(@bracket) %>
+  <% @bracket.rounds.each do |round| %>
+    <div class="round">
+      <h2>Round <%= round.number %></h2>
+      <% round.matches.each do |match| %>
+        <div class="match">
+          <span><%= match.participant1.name %></span>
+          <span>vs</span>
+          <span><%= match.participant2.name %></span>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+

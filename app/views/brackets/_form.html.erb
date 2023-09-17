@@ -1,0 +1,12 @@
+<%= form_with model: bracket, url: brackets_path, method: :post do |form| %>
+    <div class="field">
+      <%= form.label :player, "Player Name" %>
+      <%= form.text_field :player %>
+    </div>
+    <!-- Add more form fields as needed -->
+  
+    <div class="actions">
+      <%= form.submit "Create Bracket" %>
+    </div>
+  <% end %>
+  

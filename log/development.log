@@ -678,3 +678,1754 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.7ms | Allocations: 5823)
 
 
+Started GET "/" for 127.0.0.1 at 2023-09-15 20:22:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 49.4ms | Allocations: 19282)
+  Rendered layout layouts/application.html.erb (Duration: 217.1ms | Allocations: 54584)
+Completed 200 OK in 270ms (Views: 224.1ms | ActiveRecord: 2.7ms | Allocations: 64709)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2023-09-15 20:22:25 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 32)
+  Rendered comments/_form.html.erb (Duration: 43.1ms | Allocations: 5421)
+  Rendered articles/show.html.erb within layouts/application (Duration: 107.8ms | Allocations: 16978)
+  Rendered layout layouts/application.html.erb (Duration: 108.4ms | Allocations: 17052)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 1.9ms | Allocations: 19076)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000c210>
+Did you mean?  for
+               fork):
+    1: <p>
+    2:   <%= form.label :status %><br>
+    3:   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+    4: </p>
+  
+app/views/comments/_form.html.erb:2
+app/views/articles/show.html.erb:17
+Started GET "/articles/1" for 127.0.0.1 at 2023-09-15 20:22:59 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 17)
+  Rendered comments/_form.html.erb (Duration: 22.7ms | Allocations: 4660)
+  Rendered articles/show.html.erb within layouts/application (Duration: 32.3ms | Allocations: 6048)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 6126)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.7ms | Allocations: 7804)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000c580>
+Did you mean?  for
+               fork):
+    1: <p>
+    2:   <%= form.label :status %><br>
+    3:   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+    4: </p>
+  
+app/views/comments/_form.html.erb:2
+app/views/articles/show.html.erb:17
+Started GET "/articles/1" for 127.0.0.1 at 2023-09-15 20:23:10 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 17)
+  Rendered comments/_form.html.erb (Duration: 29.4ms | Allocations: 4660)
+  Rendered articles/show.html.erb within layouts/application (Duration: 40.9ms | Allocations: 6048)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 6126)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.8ms | Allocations: 7757)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000c8f0>
+Did you mean?  for
+               fork):
+    1: <p>
+    2:   <%= form.label :status %><br>
+    3:   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+    4: </p>
+  
+app/views/comments/_form.html.erb:2
+app/views/articles/show.html.erb:17
+Started GET "/articles/1" for 127.0.0.1 at 2023-09-15 20:24:19 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 17)
+  Rendered comments/_form.html.erb (Duration: 85.8ms | Allocations: 25826)
+  Rendered articles/show.html.erb within layouts/application (Duration: 94.5ms | Allocations: 27225)
+  Rendered layout layouts/application.html.erb (Duration: 107.4ms | Allocations: 29874)
+Completed 200 OK in 118ms (Views: 111.9ms | ActiveRecord: 1.4ms | Allocations: 31543)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2023-09-15 20:24:36 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:25:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 9.9ms | Allocations: 1529)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1775)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 3953)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.4ms | Allocations: 4877)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2023-09-15 20:24:38 -0400
+Processing by ArticlesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Hello Rails", "body"=>"I am on Rails!"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:29:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.4ms | Allocations: 983)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1095)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3383)
+Completed 422 Unprocessable Entity in 20ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 5897)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2023-09-15 20:24:41 -0400
+Processing by ArticlesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Hello Rails", "body"=>"I am on Rails!"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:29:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.6ms | Allocations: 874)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 933)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3110)
+Completed 422 Unprocessable Entity in 20ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 4956)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2023-09-15 20:24:42 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 17)
+  Rendered comments/_form.html.erb (Duration: 5.3ms | Allocations: 1063)
+  Rendered articles/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1986)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 4163)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 4921)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2023-09-15 20:24:46 -0400
+Processing by ArticlesController#destroy as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:40:in `destroy'
+  [1m[36mArticle Destroy (2.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/articles_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 22ms (ActiveRecord: 9.0ms | Allocations: 2375)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 20:24:46 -0400
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1404)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3752)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 4157)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 20:24:48 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.1ms | Allocations: 956)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1141)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3326)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3721)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:24:59 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Test", "body"=>"test-body"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 7.4ms | Allocations: 1801)
+  Rendered articles/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1860)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 4093)
+Completed 422 Unprocessable Entity in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 5212)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:25:04 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Test", "body"=>"test-body123"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 5.2ms | Allocations: 812)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 871)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3048)
+Completed 422 Unprocessable Entity in 24ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 4159)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:27:13 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"Test", "body"=>"test-body123"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.2ms | Allocations: 812)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 871)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3048)
+Completed 422 Unprocessable Entity in 18ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 4157)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 20:27:21 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1085)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3437)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.6ms | Allocations: 3765)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 20:27:43 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.6ms | Allocations: 943)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 999)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3184)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3515)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:27:50 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"trst", "body"=>"trs==eds"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 7.1ms | Allocations: 1719)
+  Rendered articles/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1778)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4011)
+Completed 422 Unprocessable Entity in 35ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 5133)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:27:53 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"trst", "body"=>"trs==edsvfsers"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 5.9ms | Allocations: 813)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3049)
+Completed 422 Unprocessable Entity in 32ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 4162)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 20:27:55 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"trst", "body"=>"trs==edsvfsers"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.2ms | Allocations: 813)
+  Rendered articles/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 3049)
+Completed 422 Unprocessable Entity in 34ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 4152)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 20:27:58 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1085)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 3436)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.6ms | Allocations: 3764)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 20:57:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 39321)
+Completed 200 OK in 84ms (Views: 73.6ms | ActiveRecord: 0.5ms | Allocations: 49441)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:03:52 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 76.5ms | Allocations: 15710)
+Completed 200 OK in 89ms (Views: 77.8ms | ActiveRecord: 1.6ms | Allocations: 18786)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:03:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1095)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3448)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.7ms | Allocations: 3797)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:13:37 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1657)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 15704)
+Completed 200 OK in 69ms (Views: 57.0ms | ActiveRecord: 1.5ms | Allocations: 18791)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:29:09 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1238)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3597)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 1.8ms | Allocations: 3946)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:37:27 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1928)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 16120)
+Completed 200 OK in 60ms (Views: 47.1ms | ActiveRecord: 1.6ms | Allocations: 19612)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:38:18 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4407)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.7ms | Allocations: 5618)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:39:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 103.7ms | Allocations: 38922)
+Completed 200 OK in 134ms (Views: 108.5ms | ActiveRecord: 1.0ms | Allocations: 49043)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 21:39:14 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 32.0ms | Allocations: 7604)
+  Rendered articles/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 7911)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 7988)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 1.1ms | Allocations: 23688)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bracket' for #<ActionView::Base:0x0000000000c1e8>
+Did you mean?  bracket_url):
+    18:     <!-- In your view template (e.g., app/views/brackets/show.html.erb) -->
+    19:     <h1>Tournament Bracket</h1>
+    20:     <div class="bracket">
+    21:         <%= render_bracket(bracket) %> <!-- Call a helper method or render a partial to display the bracket -->
+    22:     </div>
+    23: 
+    24:   
+  
+app/views/articles/_form.html.erb:21
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 21:41:02 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 37.8ms | Allocations: 5107)
+  Rendered articles/new.html.erb within layouts/application (Duration: 40.0ms | Allocations: 5385)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 5463)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms | Allocations: 6657)
+
+
+  
+ActionView::Template::Error (undefined method `render_bracket' for #<ActionView::Base:0x0000000000c530>):
+    18:     <!-- In your view template (e.g., app/views/brackets/show.html.erb) -->
+    19:     <h1>Tournament Bracket</h1>
+    20:     <div class="bracket">
+    21:         <%= render_bracket(@bracket) %> <!-- Call a helper method or render a partial to display the bracket -->
+    22:     </div>
+    23: 
+    24:   
+  
+app/views/articles/_form.html.erb:21
+app/views/articles/_form.html.erb:1
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 21:43:51 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 10.1ms | Allocations: 1624)
+  Rendered articles/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1900)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4521)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 5750)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:43:54 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1475)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 3842)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.6ms | Allocations: 4251)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:47:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (4.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 1898)
+  Rendered layout layouts/application.html.erb (Duration: 109.4ms | Allocations: 15936)
+Completed 200 OK in 136ms (Views: 109.7ms | ActiveRecord: 6.4ms | Allocations: 19019)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-15 21:47:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 10.2ms | Allocations: 1085)
+  Rendered articles/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1148)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 3334)
+Completed 200 OK in 66ms (Views: 53.8ms | ActiveRecord: 1.1ms | Allocations: 5265)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 21:47:27 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"wqweqweq", "body"=>"sdrsresreserser"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.5ms | Allocations: 917)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3332)
+Completed 422 Unprocessable Entity in 25ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 5027)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 21:47:29 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"wqweqweq", "body"=>"sdrsresreserser"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 5.3ms | Allocations: 812)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 871)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3048)
+Completed 422 Unprocessable Entity in 27ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 4159)
+
+
+Started POST "/articles" for 127.0.0.1 at 2023-09-15 21:47:29 -0400
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"wqweqweq", "body"=>"sdrsresreserser"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.8ms | Allocations: 813)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3049)
+Completed 422 Unprocessable Entity in 19ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4163)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-15 21:47:30 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1201)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3561)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.6ms | Allocations: 3891)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:13:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1927)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 16196)
+Completed 200 OK in 77ms (Views: 61.6ms | ActiveRecord: 1.8ms | Allocations: 19694)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:22:47 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1745)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4591)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.4ms | Allocations: 5802)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:23:42 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1570)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4408)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.7ms | Allocations: 5620)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:36:37 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1738)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 4575)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 1.5ms | Allocations: 5787)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:37:35 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1566)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4398)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.7ms | Allocations: 5610)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:43:07 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1210)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1291)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2479)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+  <% @bracket.each do |bracket| %>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:      <% @bracket.each do |bracket| %>
+13:        <% end %>
+14:      <% end %>
+15:    </ul>
+16:    
+17:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:43:41 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1312)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2486)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+  <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:      <% @bracket.each do |bracket| %>
+13:        <% unless bracket.archived? %>
+14:          <li>
+15:            <%= link_to bracket.title, bracket %>
+16:          </li>
+17:        <% end %>
+18:      <% end %>
+19:    </ul>
+20:    
+21:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:24: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:44:05 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1321)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2495)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+  <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:      <% @bracket.each do |bracket| %>
+13:        <% unless bracket.archived? %>
+14:          <li>
+15:            <%= link_to bracket.title, bracket %>
+16:          </li>
+17:        <% end %>
+18:        <% end %>
+19:      <% end %>
+20:    </ul>
+21:    
+22:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:44:21 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1268)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1582)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+  <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:      <% @bracket.each do |bracket| %>
+13:        <% unless bracket.archived? %>
+14:          <li>
+15:            <%= link_to bracket.title, bracket %>
+16:          </li>
+17:        <% end %>
+18:        <% end %>
+19:      <% end %>
+20:    </ul>
+21:    
+22:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 13:44:55 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1321)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2475)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+  <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:        <% end %>
+13:      <% @bracket.each do |bracket| %>
+14:        <% unless bracket.archived? %>
+15:          <li>
+16:            <%= link_to bracket.title, bracket %>
+17:          </li>
+18:        <% end %>
+19:      <% end %>
+20:    </ul>
+21:    
+22:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:05:47 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1196)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1268)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1582)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+  <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:        <% end %>
+13:      <% @bracket.each do |bracket| %>
+14:        <% unless bracket.archived? %>
+15:          <li>
+16:            <%= link_to bracket.title, bracket %>
+17:          </li>
+18:        <% end %>
+19:      <% end %>
+20:    </ul>
+21:    
+22:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:09:29 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1329)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+ <ul> 
+    <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:        <% end %>
+13:     <ul> 
+14:        <% @bracket.each do |bracket| %>
+15:        <% unless bracket.archived? %>
+16:          <li>
+17:            <%= link_to bracket.title, bracket %>
+18:          </li>
+19:        <% end %>
+20:      <% end %>
+21:    </ul>
+22:    
+23:    <%= link_to "New Article", new_article_path %>
+  
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:26: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:10:07 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1247)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1328)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2502)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Articles</h1>
+<h1>Bracket<h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+ <ul> 
+    <% @bracket.each do |bracket| %>
+    <% unless bracket.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+ 
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
+<% end %>
+):
+1:    <h1>Articles</h1>
+2:    <h1>Bracket<h1>
+3:    
+4:    Our blog has <%= Article.public_count %> articles and counting!
+5:    
+6:    <ul>
+7:      <% @articles.each do |article| %>
+8:        <% unless article.archived? %>
+9:          <li>
+10:            <%= link_to article.title, article %>
+11:          </li>
+12:        <% end %>
+13:     <ul> 
+14:        <% @bracket.each do |bracket| %>
+15:        <% unless bracket.archived? %>
+16:          <li>
+17:            <%= link_to bracket.title, bracket %>
+18:          </li>
+19:        <% end %>
+20:     
+21:    </ul>
+22:    
+23:    <%= link_to "New Article", new_article_path %>
+24:    
+25:    <% end %>
+  
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:10:31 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1746)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4612)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 1.8ms | Allocations: 5819)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:10:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1573)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 4427)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.9ms | Allocations: 5639)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:11:08 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1573)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 4431)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.6ms | Allocations: 5643)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:11:32 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1576)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4432)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 1.1ms | Allocations: 5644)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:11:36 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1576)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4428)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.7ms | Allocations: 5645)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:11:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1580)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 4432)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.8ms | Allocations: 5647)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:12:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1576)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 4428)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.9ms | Allocations: 5641)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:12:54 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4395)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.6ms | Allocations: 5607)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:14:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4401)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.6ms | Allocations: 5613)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-09-17 14:14:51 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.4ms | Allocations: 1462)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1706)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3891)
+Completed 200 OK in 25ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 5701)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:15:30 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 4391)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.7ms | Allocations: 5587)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:16:26 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4405)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.7ms | Allocations: 5617)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:18:30 -0400
+  
+SyntaxError (/home/clloyd/Documents/GitHub/FantasyFifa/config/routes.rb:13: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:13: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:13: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:13: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:18:46 -0400
+  
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:19:00 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 15938)
+Completed 200 OK in 69ms (Views: 55.5ms | ActiveRecord: 1.9ms | Allocations: 19021)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:26:26 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1923)
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 16109)
+Completed 200 OK in 69ms (Views: 56.3ms | ActiveRecord: 1.2ms | Allocations: 19598)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:28:53 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1878)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 15933)
+Completed 200 OK in 84ms (Views: 56.1ms | ActiveRecord: 1.8ms | Allocations: 19009)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:29:37 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 15830)
+Completed 200 OK in 63ms (Views: 50.6ms | ActiveRecord: 2.0ms | Allocations: 18902)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:30:39 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 15835)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 1.8ms | Allocations: 18907)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:35:46 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 15923)
+Completed 200 OK in 59ms (Views: 48.0ms | ActiveRecord: 1.9ms | Allocations: 18995)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:38:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1875)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 15881)
+Completed 200 OK in 71ms (Views: 60.2ms | ActiveRecord: 1.8ms | Allocations: 18953)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:41:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 15925)
+Completed 200 OK in 59ms (Views: 46.4ms | ActiveRecord: 2.1ms | Allocations: 19009)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:41:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3938)
+  Rendered layout layouts/application.html.erb (Duration: 192.9ms | Allocations: 39204)
+Completed 200 OK in 234ms (Views: 200.3ms | ActiveRecord: 1.4ms | Allocations: 49324)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:45:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 228.8ms | Allocations: 38786)
+Completed 200 OK in 277ms (Views: 240.5ms | ActiveRecord: 1.9ms | Allocations: 48906)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 14:47:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brackets/new"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-17 14:53:11 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1946)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 16242)
+Completed 200 OK in 64ms (Views: 51.7ms | ActiveRecord: 1.5ms | Allocations: 19752)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:00:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3924)
+  Rendered layout layouts/application.html.erb (Duration: 186.1ms | Allocations: 39231)
+Completed 200 OK in 222ms (Views: 191.6ms | ActiveRecord: 1.3ms | Allocations: 49350)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:04:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1577)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4414)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 5671)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:04:15 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1091)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3440)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 3791)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:06:35 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 114.6ms | Allocations: 14671)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 1.0ms | Allocations: 15871)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_bracket_path' for #<ActionView::Base:0x0000000000c530>
+Did you mean?  new_article_path):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= link_to "New Brackets", new_bracket_path, class: "btn btn-primary" %>
+    15: 
+    16:     <%= yield %>
+    17:   </body>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:09:24 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 8568)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.7ms | Allocations: 9750)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_bracket_path' for #<ActionView::Base:0x0000000000c8a0>):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= link_to "New Brackets", create_bracket_path, class: "btn btn-primary" %>
+    15: 
+    16:     <%= yield %>
+    17:   </body>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:09:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 8546)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.7ms | Allocations: 9712)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_bracket' for #<ActionView::Base:0x0000000000cbe8>):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= link_to "New Brackets", create_bracket, class: "btn btn-primary" %>
+    15: 
+    16:     <%= yield %>
+    17:   </body>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:10:09 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1899)
+  Rendered layout layouts/application.html.erb (Duration: 81.7ms | Allocations: 20024)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 3.0ms | Allocations: 23071)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_bracket' for #<ActionView::Base:0x00000000012048>):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= link_to "New Brackets", create_bracket, class: "btn btn-primary" %>
+    15: 
+    16:     <%= yield %>
+    17:   </body>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:10:21 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1561)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4474)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.9ms | Allocations: 5682)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:10:23 -0400
+  
+NoMethodError (undefined method `validates' for BracketsController:Class):
+  
+app/models/concerns/visible.rb:7:in `block in <module:Visible>'
+app/controllers/brackets_controller.rb:2:in `include'
+app/controllers/brackets_controller.rb:2:in `<class:BracketsController>'
+app/controllers/brackets_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:10:26 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1212)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3735)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.6ms | Allocations: 4099)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:10:46 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1562)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4474)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.8ms | Allocations: 5664)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:11:13 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2160)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2240)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.9ms | Allocations: 18385)
+
+
+  
+ActionView::Template::Error (Missing partial brackets/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/clloyd/Documents/GitHub/FantasyFifa/app/views"
+  * "/var/lib/gems/3.0.0/gems/turbo-rails-1.4.0/app/views"
+  * "/var/lib/gems/3.0.0/gems/actiontext-7.0.7.2/app/views"
+  * "/var/lib/gems/3.0.0/gems/actionmailbox-7.0.7.2/app/views"
+
+Did you mean?  articles/form
+               comments/form
+               comments/comment
+               active_storage/blobs/blob
+               action_text/attachables/remote_image
+               action_text/contents/content):
+    1: <h1>New Bracket</h1>
+    2: 
+    3: <%= render "form", bracket: @bracket %>
+  
+app/views/brackets/new.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:26 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.0ms | Allocations: 104)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 380)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3364)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4580)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:27 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2469)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2824)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:29 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2467)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 2798)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:29 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2475)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:30 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2469)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2800)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:13:35 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1560)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4212)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.7ms | Allocations: 5135)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:36 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2469)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 2822)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:13:54 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.0ms | Allocations: 104)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 381)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3343)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 4561)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-17 15:13:59 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1567)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 4234)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.6ms | Allocations: 5175)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-17 15:14:00 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2488)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2843)
+
+

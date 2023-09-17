@@ -1,0 +1,16 @@
+<h1>brackets</h1>
+
+Our brackets has <%= Bracket.public_count %> articles and counting!
+
+<ul>
+  <% @bracket.each do |bracket| %>
+    <% unless brackets.archived? %>
+      <li>
+        <%= link_to bracket.title, bracket %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+
+
