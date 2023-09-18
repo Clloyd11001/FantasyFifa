@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+    font-family: 'EA-Sans-Curves';
+    src: url('EA-Sans-Curves.ttf')
+}
+
+h1 {
+    font-family: 'EA-Sans-Curves';
+}
+
+li {
+    font-family: 'EA-Sans-Curves';
+}

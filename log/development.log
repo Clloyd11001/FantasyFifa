@@ -5970,3 +5970,225 @@ Processing by BracketsController#create as TURBO_STREAM
 Completed 200 OK in 36ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 6569)
 
 
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:34:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 814.0ms | Allocations: 112447)
+Completed 200 OK in 857ms (Views: 821.3ms | ActiveRecord: 1.4ms | Allocations: 122616)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/EA-Sans-Curves/EA%20Sans%20Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:35:43 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4028)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.8ms | Allocations: 4403)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/EA-Sans-Curves/EA%20Sans%20Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:35:50 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1090)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3647)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.8ms | Allocations: 3981)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/EA-Sans-Curves/EA%20Sans%20Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:40:08 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1091)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 5046)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.7ms | Allocations: 5381)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/fonts/EA-Sans-Curves/EA%20Sans%20Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:41:17 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1090)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 4976)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.7ms | Allocations: 5310)
+
+
+Started GET "/app/assets/fonts/EA-Sans-Curves.ttf" for 127.0.0.1 at 2023-09-18 09:41:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/fonts/EA-Sans-Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:42:03 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 5615)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.6ms | Allocations: 5942)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/EA-Sans-Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:42:05 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3616)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 3943)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/EA-Sans-Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:42:10 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3681)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.6ms | Allocations: 4010)
+
+
+Started GET "/app/assets/fonts/EA-Sans-Curves.ttf" for 127.0.0.1 at 2023-09-18 09:42:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/fonts/EA-Sans-Curves.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:44:16 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1082)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 6947)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.7ms | Allocations: 7275)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:44:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 5870)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.7ms | Allocations: 6197)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:44:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5864)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 6191)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:44:57 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3826)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 4153)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:45:10 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3878)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.7ms | Allocations: 4205)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:45:51 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1564)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 6976)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.6ms | Allocations: 8164)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-18 09:46:20 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1563)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4828)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.6ms | Allocations: 6041)
+
+
