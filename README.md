@@ -1,24 +1,8 @@
 # README
+# Credit towards Andrew Nordman (https://github.com/cadwallion)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run 'git clone' on this project
 
-Things you may want to cover:
+In the same directory, 'git clone' this repo https://github.com/agoragames/bracket_tree/tree/main
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run 'bundle install'
