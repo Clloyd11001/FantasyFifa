@@ -1,24 +1,23 @@
 # README
+# Credit towards Andrew Nordman (https://github.com/cadwallion)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Install Ruby
+https://www.ruby-lang.org/en/documentation/installation/
 
-Things you may want to cover:
+# Install SQLite for databases
+https://www.sqlite.org/index.html
 
-* Ruby version
+# Install Rails
+gem install rails
 
-* System dependencies
+# Download the project
+Run 'git clone' on this project
 
-* Configuration
+# Get Bracket Tree Ruby Gem
+In the same directory, 'git clone' this repo https://github.com/agoragames/bracket_tree/tree/main
 
-* Database creation
+# Perform updates
+Run 'bundle install'
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Run server
+'bin/rails s'
