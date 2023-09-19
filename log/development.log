@@ -6192,3 +6192,2404 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.6ms | Allocations: 6041)
 
 
+Started GET "/" for 127.0.0.1 at 2023-09-19 17:21:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 202.3ms | Allocations: 42093)
+Completed 200 OK in 246ms (Views: 208.2ms | ActiveRecord: 1.6ms | Allocations: 52264)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:21:05 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 12.6ms | Allocations: 4279)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 4601)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 7396)
+Completed 200 OK in 74ms (Views: 29.1ms | ActiveRecord: 1.7ms | Allocations: 26309)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 17:21:11 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Players"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 31.1ms | Allocations: 1947)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 31.8ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 4788)
+Completed 200 OK in 76ms (Views: 43.7ms | ActiveRecord: 1.6ms | Allocations: 13517)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:26:22 -0400
+  
+SyntaxError (/home/clloyd/Documents/GitHub/FantasyFifa/app/controllers/brackets_controller.rb:83: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/brackets_controller.rb:83: syntax error, unexpected `end', expecting end-of-input
+app/controllers/brackets_controller.rb:83: syntax error, unexpected `end', expecting end-of-input
+app/controllers/brackets_controller.rb:83: syntax error, unexpected `end', expecting end-of-input
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:26:33 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 16059)
+Completed 200 OK in 76ms (Views: 49.1ms | ActiveRecord: 3.4ms | Allocations: 21645)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:26:35 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2778)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 3133)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:26:37 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2778)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 3110)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:26:49 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 10.9ms | Allocations: 3519)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3795)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6836)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 8038)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:13 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3510)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 4737)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:15 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2776)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3132)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:16 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2780)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3112)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:17 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2776)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3108)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:27 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.6ms | Allocations: 2391)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2667)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5708)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 6910)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:27:59 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.2ms | Allocations: 2394)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2683)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 5724)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.0ms | Allocations: 6950)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:28:09 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.9ms | Allocations: 2393)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 5735)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 6961)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 17:28:18 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"f"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"d"}, "6"=>{"name"=>"hn"}, "7"=>{"name"=>"m"}, "8"=>{"name"=>"sa"}, "9"=>{"name"=>"v"}, "10"=>{"name"=>"mcos"}, "11"=>{"name"=>"mcjknjzn"}}}, "commit"=>"Create Players"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.0ms | Allocations: 1925)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2038)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4721)
+Completed 200 OK in 58ms (Views: 18.1ms | ActiveRecord: 1.3ms | Allocations: 13965)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:30:19 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.0ms | Allocations: 3210)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3281)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 18602)
+Completed 200 OK in 102ms (Views: 84.2ms | ActiveRecord: 2.4ms | Allocations: 23723)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 17:30:22 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"f"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"d"}, "6"=>{"name"=>"hn"}, "7"=>{"name"=>"m"}, "8"=>{"name"=>"sa"}, "9"=>{"name"=>"v"}, "10"=>{"name"=>"mcos"}, "11"=>{"name"=>"mcjknjzn"}}}, "commit"=>"Create Players"}
+No template found for BracketsController#create, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 1.3ms | Allocations: 4086)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-19 17:59:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 202.5ms | Allocations: 42332)
+Completed 200 OK in 247ms (Views: 208.8ms | ActiveRecord: 1.5ms | Allocations: 52502)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 17:59:33 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 3.1ms | Allocations: 4279)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 4628)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 7423)
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 26359)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 17:59:44 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+No template found for BracketsController#create, rendering head :no_content
+Completed 204 No Content in 16ms (ActiveRecord: 0.4ms | Allocations: 7819)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:01:39 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 11.3ms | Allocations: 3236)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3307)
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 18637)
+Completed 200 OK in 87ms (Views: 58.4ms | ActiveRecord: 3.7ms | Allocations: 23806)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:01:49 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.9ms | Allocations: 1926)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2041)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4725)
+Completed 200 OK in 54ms (Views: 26.2ms | ActiveRecord: 1.7ms | Allocations: 9711)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:06:43 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.0ms | Allocations: 3216)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3287)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 18495)
+Completed 200 OK in 70ms (Views: 49.0ms | ActiveRecord: 2.5ms | Allocations: 23615)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:06:45 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.1ms | Allocations: 1923)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1989)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4672)
+Completed 200 OK in 37ms (Views: 15.3ms | ActiveRecord: 1.2ms | Allocations: 10903)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:07:57 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 13.5ms | Allocations: 3218)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3289)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 18499)
+Completed 200 OK in 103ms (Views: 76.9ms | ActiveRecord: 3.8ms | Allocations: 23561)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:07:58 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:07:58.464648"], ["updated_at", "2023-09-19 22:07:58.464648"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.9ms | Allocations: 7789)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:09:00 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 13.1ms | Allocations: 3280)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3351)
+  Rendered layout layouts/application.html.erb (Duration: 82.5ms | Allocations: 18679)
+Completed 200 OK in 108ms (Views: 87.1ms | ActiveRecord: 2.5ms | Allocations: 23811)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:09:02 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:09:02.756649"], ["updated_at", "2023-09-19 22:09:02.756649"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.4ms | Allocations: 6585)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:09:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3934)
+  Rendered layout layouts/application.html.erb (Duration: 188.9ms | Allocations: 42181)
+Completed 200 OK in 230ms (Views: 195.3ms | ActiveRecord: 1.4ms | Allocations: 52351)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:09:15 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 12.8ms | Allocations: 4263)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 4612)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7407)
+Completed 200 OK in 70ms (Views: 28.8ms | ActiveRecord: 2.0ms | Allocations: 26255)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:09:21 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:09:21.478946"], ["updated_at", "2023-09-19 22:09:21.478946"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.5ms | Allocations: 11624)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:10:16 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.5ms | Allocations: 3280)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3351)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 18680)
+Completed 200 OK in 70ms (Views: 50.0ms | ActiveRecord: 2.7ms | Allocations: 23814)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:10:23 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.6ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:10:23.933981"], ["updated_at", "2023-09-19 22:10:23.933981"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.4ms | Allocations: 6569)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:10:43 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 11.7ms | Allocations: 3276)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3347)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 18676)
+Completed 200 OK in 78ms (Views: 53.8ms | ActiveRecord: 2.9ms | Allocations: 23754)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:10:44 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.6ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:10:44.658358"], ["updated_at", "2023-09-19 22:10:44.658358"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.5ms | Allocations: 6553)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:11:27 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.1ms | Allocations: 3246)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3317)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 18646)
+Completed 200 OK in 91ms (Views: 71.6ms | ActiveRecord: 2.3ms | Allocations: 23681)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:11:29 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:11:30.028971"], ["updated_at", "2023-09-19 22:11:30.028971"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:56:in `create'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.9ms | Allocations: 6571)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:56:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:13:19 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.0ms | Allocations: 3258)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3329)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 18681)
+Completed 200 OK in 70ms (Views: 51.0ms | ActiveRecord: 2.1ms | Allocations: 23716)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:13:21 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:13:21.679328"], ["updated_at", "2023-09-19 22:13:21.679328"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 3.0ms | Allocations: 6552)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:15:36 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.9ms | Allocations: 3280)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3351)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 18702)
+Completed 200 OK in 77ms (Views: 54.6ms | ActiveRecord: 2.4ms | Allocations: 23925)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:15:38 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.6ms | Allocations: 1900)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2013)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4696)
+Completed 200 OK in 46ms (Views: 20.6ms | ActiveRecord: 1.2ms | Allocations: 10686)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:15:59 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.5ms | Allocations: 3214)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3285)
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 18493)
+Completed 200 OK in 80ms (Views: 57.7ms | ActiveRecord: 2.2ms | Allocations: 23555)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:16:01 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:16:01.203749"], ["updated_at", "2023-09-19 22:16:01.203749"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.5ms | Allocations: 6581)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:16:04 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1728)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 4759)
+Completed 200 OK in 32ms (Views: 20.8ms | ActiveRecord: 1.4ms | Allocations: 7662)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:16:04 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3824)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 4167)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:16:06 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.0ms | Allocations: 2076)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2136)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4722)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5060)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:16:11 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 15.8ms | Allocations: 3248)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 3319)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 18648)
+Completed 200 OK in 106ms (Views: 77.2ms | ActiveRecord: 3.2ms | Allocations: 23873)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:16:12 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.8ms | Allocations: 1899)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1965)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4648)
+Completed 200 OK in 39ms (Views: 18.4ms | ActiveRecord: 1.8ms | Allocations: 10281)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:19:39 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.9ms | Allocations: 3208)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3279)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 18487)
+Completed 200 OK in 75ms (Views: 55.5ms | ActiveRecord: 2.2ms | Allocations: 23594)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:19:40 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.4ms | Allocations: 1875)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1941)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4624)
+Completed 200 OK in 37ms (Views: 18.3ms | ActiveRecord: 1.6ms | Allocations: 9879)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:19:41 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.1ms | Allocations: 1817)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 4455)
+Completed 200 OK in 28ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 7083)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:26:27 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.7ms | Allocations: 3216)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3287)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 18495)
+Completed 200 OK in 64ms (Views: 47.2ms | ActiveRecord: 1.1ms | Allocations: 23124)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:26:29 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.6ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:26:29.173731"], ["updated_at", "2023-09-19 22:26:29.173731"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms | Allocations: 6270)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:28:09 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.0ms | Allocations: 2130)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2186)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 4901)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:28:11 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:28:11.745211"], ["updated_at", "2023-09-19 22:28:11.745211"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.4ms | Allocations: 3855)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:29:43 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 4.0ms | Allocations: 3288)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3359)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 18723)
+Completed 200 OK in 55ms (Views: 46.6ms | ActiveRecord: 1.0ms | Allocations: 23827)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:29:45 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.4ms | Allocations: 4194)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"brackets", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:30:53 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 10.0ms | Allocations: 3248)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3319)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 18536)
+Completed 200 OK in 71ms (Views: 52.2ms | ActiveRecord: 2.1ms | Allocations: 23572)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:30:55 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 17ms (ActiveRecord: 1.2ms | Allocations: 3969)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:30:55 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 37.2ms | Allocations: 4589)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 4668)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms | Allocations: 7158)
+
+
+  
+ActionView::Template::Error (undefined method `public_count' for Bracket:Class
+Did you mean?  public_constant):
+    1: <h1>brackets</h1>
+    2: 
+    3: Our brackets has <%= Bracket.public_count %> articles and counting!
+    4: 
+    5: <ul>
+    6:   <% @bracket.each do |bracket| %>
+  
+app/views/brackets/index.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:31:10 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.5ms | Allocations: 2485)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2786)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 5854)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 7082)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:31:12 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:31:12 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 34.6ms | Allocations: 4507)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 4578)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 5010)
+
+
+  
+ActionView::Template::Error (undefined method `public_count' for Bracket:Class
+Did you mean?  public_constant):
+    1: <h1>brackets</h1>
+    2: 
+    3: #Our brackets has <%= Bracket.public_count %> articles and counting!
+    4: 
+    5: <ul>
+    6:   <% @bracket.each do |bracket| %>
+  
+app/views/brackets/index.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:31:19 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 18.1ms | Allocations: 2480)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 2781)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 5854)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 7074)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:31:20 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 1412)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:31:20 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1664)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <ul>
+    5:   <% @bracket.each do |bracket| %>
+    6:     <% unless brackets.archived? %>
+    7:       <li>
+    8:         <%= link_to bracket.title, bracket %>
+  
+app/views/brackets/index.html.erb:5
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:31:35 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.6ms | Allocations: 2477)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2778)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 5851)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 7073)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:31:37 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Allocations: 1410)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:31:37 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1591)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1662)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2093)
+
+
+  
+ActionView::Template::Error (undefined method `players' for nil:NilClass):
+    2: 
+    3: 
+    4: <ul>
+    5:   <% @bracket.players.each do |bracket| %>
+    6:     <% unless brackets.archived? %>
+    7:       <li>
+    8:         <%= link_to bracket.title, bracket %>
+  
+app/views/brackets/index.html.erb:5
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:32:12 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.0ms | Allocations: 2479)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2780)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 5848)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 7067)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:32:13 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms | Allocations: 1406)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:32:13 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2893)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3353)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:32:15 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.9ms | Allocations: 1951)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2007)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4593)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 4926)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:32:24 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"ef"}, "5"=>{"name"=>"g"}, "6"=>{"name"=>"h"}, "7"=>{"name"=>"jnj"}, "8"=>{"name"=>"jn"}, "9"=>{"name"=>"nmnm"}, "10"=>{"name"=>"nmnmn"}, "11"=>{"name"=>"ncodsnvun"}}}, "commit"=>"Create Bracket"}
+Redirected to http://127.0.0.1:3000/brackets
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 1313)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:32:24 -0400
+Processing by BracketsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2768)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 3111)
+
+
+Started GET "/brackets" for 127.0.0.1 at 2023-09-19 18:33:00 -0400
+Processing by BracketsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/index.html.erb within layouts/application
+  Rendered brackets/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 15598)
+Completed 200 OK in 59ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 20407)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:33:01 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.7ms | Allocations: 3108)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3172)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5758)
+Completed 200 OK in 34ms (Views: 21.6ms | ActiveRecord: 2.2ms | Allocations: 8415)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:33:09 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"cbicbsibic"}, "3"=>{"name"=>"nidnhb"}, "4"=>{"name"=>"hdbih"}, "5"=>{"name"=>"bihdb"}, "6"=>{"name"=>"hbh"}, "7"=>{"name"=>"dbnn"}, "8"=>{"name"=>"dnu"}, "9"=>{"name"=>"dnnd"}, "10"=>{"name"=>"unu"}, "11"=>{"name"=>"dunuju"}}}, "commit"=>"Create Bracket"}
+Completed 404 Not Found in 16ms (ActiveRecord: 1.3ms | Allocations: 4105)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket without an ID):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:33:09 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.6ms | Allocations: 2125)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2181)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4896)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 5257)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:35:28 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 13.1ms | Allocations: 2375)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2676)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 5717)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms | Allocations: 6934)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:35:36 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"g"}, "6"=>{"name"=>"b"}, "7"=>{"name"=>" mk"}, "8"=>{"name"=>"j"}, "9"=>{"name"=>"n"}, "10"=>{"name"=>"njo"}, "11"=>{"name"=>"pjn"}}}, "commit"=>"Create Bracket"}
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms | Allocations: 1738)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket without an ID):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:35:36 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.7ms | Allocations: 1985)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2041)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 4654)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4999)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:37:57 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 11.3ms | Allocations: 3222)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3293)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 18621)
+Completed 200 OK in 81ms (Views: 60.3ms | ActiveRecord: 2.8ms | Allocations: 23723)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:38:09 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"l"}, "11"=>{"name"=>"k"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.2ms | Allocations: 6737)
+
+
+  
+NameError (undefined local variable or method `template' for #<BracketsController:0x00000000057210>):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:40:58 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.2ms | Allocations: 3296)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3367)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 18695)
+Completed 200 OK in 69ms (Views: 49.8ms | ActiveRecord: 2.0ms | Allocations: 23797)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:41:00 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"l"}, "11"=>{"name"=>"k"}}}, "commit"=>"Create Bracket"}
+Completed 404 Not Found in 16ms (ActiveRecord: 1.2ms | Allocations: 4135)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket without an ID):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:41:00 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.6ms | Allocations: 2063)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2119)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4834)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5195)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:42:20 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.1ms | Allocations: 3216)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3287)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 18592)
+Completed 200 OK in 74ms (Views: 55.0ms | ActiveRecord: 2.1ms | Allocations: 23650)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:42:27 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.4ms | Allocations: 4611)
+
+
+  
+NoMethodError (undefined method `save' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:42:48 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.6ms | Allocations: 3246)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3317)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 18648)
+Completed 200 OK in 76ms (Views: 55.2ms | ActiveRecord: 2.2ms | Allocations: 23706)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:42:49 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.3ms | Allocations: 4604)
+
+
+  
+NoMethodError (undefined method `players' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:43:32 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.3ms | Allocations: 3242)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3313)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 18643)
+Completed 200 OK in 70ms (Views: 50.6ms | ActiveRecord: 2.2ms | Allocations: 23701)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:43:34 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.2ms | Allocations: 4616)
+
+
+  
+NoMethodError (undefined method `players' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:43:48 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.3ms | Allocations: 3218)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3289)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 18645)
+Completed 200 OK in 89ms (Views: 69.3ms | ActiveRecord: 2.3ms | Allocations: 23680)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:43:50 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.3ms | Allocations: 4624)
+
+
+  
+NoMethodError (undefined method `players' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:44:11 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 16.5ms | Allocations: 3278)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 18.5ms | Allocations: 3349)
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 18677)
+Completed 200 OK in 115ms (Views: 90.2ms | ActiveRecord: 2.4ms | Allocations: 23722)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:44:12 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.3ms | Allocations: 4609)
+
+
+  
+NoMethodError (undefined method `players' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:45:03 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.6ms | Allocations: 3246)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3317)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 18684)
+Completed 200 OK in 71ms (Views: 50.8ms | ActiveRecord: 2.3ms | Allocations: 23780)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:45:06 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms | Allocations: 4619)
+
+
+  
+NoMethodError (undefined method `players' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a">, #<Player id: nil, created_at: nil, updated_at: nil, name: "b">, #<Player id: nil, created_at: nil, updated_at: nil, name: "c">, #<Player id: nil, created_at: nil, updated_at: nil, name: "d">, #<Player id: nil, created_at: nil, updated_at: nil, name: "e">, #<Player id: nil, created_at: nil, updated_at: nil, name: "f">, #<Player id: nil, created_at: nil, updated_at: nil, name: "g">, #<Player id: nil, created_at: nil, updated_at: nil, name: "h">, #<Player id: nil, created_at: nil, updated_at: nil, name: "i">, #<Player id: nil, created_at: nil, updated_at: nil, name: "j">, #<Player id: nil, created_at: nil, updated_at: nil, name: "k">, #<Player id: nil, created_at: nil, updated_at: nil, name: "l">]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:46:14 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.9ms | Allocations: 3292)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3363)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 18729)
+Completed 200 OK in 65ms (Views: 47.0ms | ActiveRecord: 2.1ms | Allocations: 23831)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:46:15 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 404 Not Found in 32ms (ActiveRecord: 1.2ms | Allocations: 4156)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket without an ID):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:46:15 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 2.0ms | Allocations: 2081)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2137)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4852)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5213)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:47:22 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 11.0ms | Allocations: 3254)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 3325)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 18654)
+Completed 200 OK in 74ms (Views: 54.6ms | ActiveRecord: 2.2ms | Allocations: 23756)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:47:30 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"b"}, "8"=>{"name"=>"n"}, "9"=>{"name"=>"m"}, "10"=>{"name"=>"o"}, "11"=>{"name"=>"p"}}}, "commit"=>"Create Bracket"}
+[31mUnpermitted parameter: :players. Context: { controller: BracketsController, action: create, request: #<ActionDispatch::Request:0x00007f33acb27438>, params: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"b"}, "8"=>{"name"=>"n"}, "9"=>{"name"=>"m"}, "10"=>{"name"=>"o"}, "11"=>{"name"=>"p"}}}, "commit"=>"Create Bracket", "controller"=>"brackets", "action"=>"create"} }[0m
+Completed 404 Not Found in 19ms (ActiveRecord: 1.4ms | Allocations: 4380)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket without an ID):
+  
+app/controllers/brackets_controller.rb:33:in `show'
+app/controllers/brackets_controller.rb:25:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:47:31 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 1.8ms | Allocations: 2041)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2097)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4785)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5146)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:48:02 -0400
+  
+SyntaxError (/home/clloyd/Documents/GitHub/FantasyFifa/app/controllers/brackets_controller.rb:33: syntax error, unexpected ']', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+... Bracket.find(bracket_params[:])
+...                              ^
+/home/clloyd/Documents/GitHub/FantasyFifa/app/controllers/brackets_controller.rb:49: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/brackets_controller.rb:33: syntax error, unexpected ']', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+app/controllers/brackets_controller.rb:49: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/brackets_controller.rb:33: syntax error, unexpected ']', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+app/controllers/brackets_controller.rb:49: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/brackets_controller.rb:33: syntax error, unexpected ']', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+app/controllers/brackets_controller.rb:49: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:49:30 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 2.3ms | Allocations: 3274)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 3345)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 18673)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 0.7ms | Allocations: 23775)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:49:46 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"adnoan"}, "1"=>{"name"=>"av"}, "2"=>{"name"=>"cbicbsibic"}, "3"=>{"name"=>"cdcd"}, "4"=>{"name"=>"cdnichidsb"}, "5"=>{"name"=>"cdbhusvhbdshibifhb"}, "6"=>{"name"=>"cbdhbhbkvdbn"}, "7"=>{"name"=>"ndjbhbchbuh"}, "8"=>{"name"=>"bcbdbcjhbuhb"}, "9"=>{"name"=>"bdhbsvcgvhb"}, "10"=>{"name"=>"kbdbhdbcuhbnkjn"}, "11"=>{"name"=>"bdkbib"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:49:46.046525"], ["updated_at", "2023-09-19 22:49:46.046525"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.0ms | Allocations: 6570)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `bracket_id`):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBracketIdToPlayers (20230919225254)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aplayers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aplayers" ("id","created_at","updated_at","name")
+                     SELECT "id","created_at","updated_at","name" FROM "players"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "players"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL, "bracket_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "players" ("id","created_at","updated_at","name")
+                     SELECT "id","created_at","updated_at","name" FROM "aplayers"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aplayers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_players_on_bracket_id" ON "players" ("bracket_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aplayers" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL, "bracket_id" integer NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "tindex_aplayers_on_bracket_id" ON "aplayers" ("bracket_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aplayers" ("id","created_at","updated_at","name","bracket_id")
+                     SELECT "id","created_at","updated_at","name","bracket_id" FROM "players"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "players"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer NOT NULL PRIMARY KEY, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL, "bracket_id" integer NOT NULL, CONSTRAINT "fk_rails_57357ad86f"
+FOREIGN KEY ("bracket_id")
+  REFERENCES "brackets" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_players_on_bracket_id" ON "players" ("bracket_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "players" ("id","created_at","updated_at","name","bracket_id")
+                     SELECT "id","created_at","updated_at","name","bracket_id" FROM "aplayers"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "aplayers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230919225254"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:54:40 -0400
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:54:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 4293)
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 6279)
+  Rendered layout layouts/application.html.erb (Duration: 364.9ms | Allocations: 77616)
+  Rendered layout layouts/application.html.erb (Duration: 365.8ms | Allocations: 77852)
+Completed 200 OK in 420ms (Views: 377.4ms | ActiveRecord: 1.6ms | Allocations: 88443)
+
+
+Completed 200 OK in 422ms (Views: 379.5ms | ActiveRecord: 1.9ms | Allocations: 88918)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-19 18:54:57 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4168)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.7ms | Allocations: 4560)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:54:59 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 16.5ms | Allocations: 4261)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 4615)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 7437)
+Completed 200 OK in 91ms (Views: 36.5ms | ActiveRecord: 1.7ms | Allocations: 26281)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:55:08 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 22:55:08.107161"], ["updated_at", "2023-09-19 22:55:08.107161"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.117257"], ["updated_at", "2023-09-19 22:55:08.117257"], ["name", "a"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.122526"], ["updated_at", "2023-09-19 22:55:08.122526"], ["name", "b"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.129387"], ["updated_at", "2023-09-19 22:55:08.129387"], ["name", "c"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.135720"], ["updated_at", "2023-09-19 22:55:08.135720"], ["name", "d"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.140598"], ["updated_at", "2023-09-19 22:55:08.140598"], ["name", "e"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.145792"], ["updated_at", "2023-09-19 22:55:08.145792"], ["name", "f"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.150432"], ["updated_at", "2023-09-19 22:55:08.150432"], ["name", "g"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.154722"], ["updated_at", "2023-09-19 22:55:08.154722"], ["name", "h"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.159088"], ["updated_at", "2023-09-19 22:55:08.159088"], ["name", "i"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.163502"], ["updated_at", "2023-09-19 22:55:08.163502"], ["name", "j"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.167830"], ["updated_at", "2023-09-19 22:55:08.167830"], ["name", "k"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 22:55:08.172565"], ["updated_at", "2023-09-19 22:55:08.172565"], ["name", "l"], ["bracket_id", 1]]
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:24:in `create'
+Redirected to http://127.0.0.1:3000/brackets/1
+Completed 302 Found in 132ms (ActiveRecord: 14.9ms | Allocations: 34236)
+
+
+Started GET "/brackets/1" for 127.0.0.1 at 2023-09-19 18:55:08 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:34:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/show.html.erb within layouts/application (Duration: 38.6ms | Allocations: 5047)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 5133)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.4ms | Allocations: 7213)
+
+
+  
+ActionView::Template::Error (undefined method `render_bracket' for #<ActionView::Base:0x0000000000ce68>):
+    2: <% if @bracket.present? %>
+    3:   <h2>Bracket Tree</h2>
+    4:   <div class="bracket-tree">
+    5:     <%= render_bracket(@bracket) %>
+    6:   </div>
+    7: <% else %>
+    8:   <p>No bracket data available.</p>
+  
+app/views/brackets/show.html.erb:5
+app/views/brackets/show.html.erb:1
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:57:02 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 12.9ms | Allocations: 3286)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 3357)
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 18686)
+Completed 200 OK in 94ms (Views: 68.7ms | ActiveRecord: 3.5ms | Allocations: 23788)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:57:14 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.4ms | Allocations: 6849)
+
+
+  
+NoMethodError (undefined method `helper_method' for #<BracketsController:0x000000000128e0>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:58:15 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.0ms | Allocations: 2037)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2093)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4781)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 5142)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:58:16 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 4181)
+
+
+  
+NoMethodError (undefined method `helper_method' for #<BracketsController:0x00000000012ea8>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:58:24 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.8ms | Allocations: 3284)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3355)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 18684)
+Completed 200 OK in 76ms (Views: 56.1ms | ActiveRecord: 2.4ms | Allocations: 23786)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:58:25 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.2ms | Allocations: 6862)
+
+
+  
+NoMethodError (undefined method `helper_methods' for #<BracketsController:0x000000000187b8>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 18:59:00 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.7ms | Allocations: 3224)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3295)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 18503)
+Completed 200 OK in 70ms (Views: 51.9ms | ActiveRecord: 2.1ms | Allocations: 23534)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 18:59:02 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.2ms | Allocations: 6848)
+
+
+  
+NoMethodError (undefined method `helper_method' for #<BracketsController:0x0000000001e000>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:00:31 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.1ms | Allocations: 2479)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2780)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 5848)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 7082)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:00:37 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 4261)
+
+
+  
+NoMethodError (undefined method `helper_method' for #<BracketsController:0x0000000001e690>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:01:46 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.1ms | Allocations: 2391)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2692)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5733)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 6965)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:01:48 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 4263)
+
+
+  
+NoMethodError (undefined method `helper_method' for #<BracketsController:0x0000000001ec58>
+Did you mean?  _helper_methods
+               _helper_methods?
+               _helper_methods=):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:01:58 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 11.9ms | Allocations: 3298)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 3369)
+  Rendered layout layouts/application.html.erb (Duration: 65.5ms | Allocations: 18697)
+Completed 200 OK in 92ms (Views: 69.3ms | ActiveRecord: 2.2ms | Allocations: 23799)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:02:00 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:02:00.220621"], ["updated_at", "2023-09-19 23:02:00.220621"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.228804"], ["updated_at", "2023-09-19 23:02:00.228804"], ["name", "a"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.233819"], ["updated_at", "2023-09-19 23:02:00.233819"], ["name", "b"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.238799"], ["updated_at", "2023-09-19 23:02:00.238799"], ["name", "c"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.244529"], ["updated_at", "2023-09-19 23:02:00.244529"], ["name", "d"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.249608"], ["updated_at", "2023-09-19 23:02:00.249608"], ["name", "e"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.254326"], ["updated_at", "2023-09-19 23:02:00.254326"], ["name", "f"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.258699"], ["updated_at", "2023-09-19 23:02:00.258699"], ["name", "g"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.262889"], ["updated_at", "2023-09-19 23:02:00.262889"], ["name", "h"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.267736"], ["updated_at", "2023-09-19 23:02:00.267736"], ["name", "i"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.272092"], ["updated_at", "2023-09-19 23:02:00.272092"], ["name", "j"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.276698"], ["updated_at", "2023-09-19 23:02:00.276698"], ["name", "k"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:02:00.282084"], ["updated_at", "2023-09-19 23:02:00.282084"], ["name", "l"], ["bracket_id", 2]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+Redirected to http://127.0.0.1:3000/brackets/2
+Completed 302 Found in 94ms (ActiveRecord: 11.6ms | Allocations: 17283)
+
+
+Started GET "/brackets/2" for 127.0.0.1 at 2023-09-19 19:02:00 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:35:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/show.html.erb within layouts/application (Duration: 35.0ms | Allocations: 4236)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 4308)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.4ms | Allocations: 5920)
+
+
+  
+ActionView::Template::Error (undefined method `render_bracket' for #<ActionView::Base:0x00000000024518>):
+    2: <% if @bracket.present? %>
+    3:   <h2>Bracket Tree</h2>
+    4:   <div class="bracket-tree">
+    5:     <%= render_bracket(@bracket) %>
+    6:   </div>
+    7: <% else %>
+    8:   <p>No bracket data available.</p>
+  
+app/views/brackets/show.html.erb:5
+app/views/brackets/show.html.erb:1
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:03:07 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.8ms | Allocations: 2473)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 5842)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 7061)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:03:09 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}, "8"=>{"name"=>"i"}, "9"=>{"name"=>"j"}, "10"=>{"name"=>"k"}, "11"=>{"name"=>"l"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:03:09.366806"], ["updated_at", "2023-09-19 23:03:09.366806"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.373719"], ["updated_at", "2023-09-19 23:03:09.373719"], ["name", "a"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.378467"], ["updated_at", "2023-09-19 23:03:09.378467"], ["name", "b"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.382976"], ["updated_at", "2023-09-19 23:03:09.382976"], ["name", "c"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.388296"], ["updated_at", "2023-09-19 23:03:09.388296"], ["name", "d"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.392409"], ["updated_at", "2023-09-19 23:03:09.392409"], ["name", "e"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.397681"], ["updated_at", "2023-09-19 23:03:09.397681"], ["name", "f"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.401981"], ["updated_at", "2023-09-19 23:03:09.401981"], ["name", "g"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.406350"], ["updated_at", "2023-09-19 23:03:09.406350"], ["name", "h"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.411214"], ["updated_at", "2023-09-19 23:03:09.411214"], ["name", "i"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.415744"], ["updated_at", "2023-09-19 23:03:09.415744"], ["name", "j"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.420585"], ["updated_at", "2023-09-19 23:03:09.420585"], ["name", "k"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:03:09.426296"], ["updated_at", "2023-09-19 23:03:09.426296"], ["name", "l"], ["bracket_id", 3]]
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:25:in `create'
+Redirected to http://127.0.0.1:3000/brackets/3
+Completed 302 Found in 80ms (ActiveRecord: 10.5ms | Allocations: 14395)
+
+
+Started GET "/brackets/3" for 127.0.0.1 at 2023-09-19 19:03:09 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:35:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/_bracket_tree.html.erb (Duration: 17.9ms | Allocations: 3651)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 23.9ms | Allocations: 4093)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4164)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.3ms | Allocations: 5023)
+
+
+  
+ActionView::Template::Error (undefined method `rounds' for #<Bracket id: 3, name: nil, position: nil, created_at: "2023-09-19 23:03:09.366806000 +0000", updated_at: "2023-09-19 23:03:09.366806000 +0000", player: nil, team: nil>):
+    1: <% output = '' %>
+    2: <% @bracket.rounds.each do |round| %>
+    3:   <% round.matches.each do |match| %>
+    4:     <% output += '<div class="match">' %>
+    5:     <% output += "<span>#{match.participant1.name}</span>" %>
+  
+app/views/brackets/_bracket_tree.html.erb:2
+app/views/brackets/show.html.erb:5
+app/views/brackets/show.html.erb:1
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:11:52 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 9.4ms | Allocations: 2657)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2959)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 18541)
+Completed 200 OK in 76ms (Views: 58.4ms | ActiveRecord: 0.8ms | Allocations: 23647)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:11:53 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms | Allocations: 6549)
+
+
+  
+NameError (undefined local variable or method `player' for #<BracketsController:0x0000000002a350>
+Did you mean?  players):
+  
+app/controllers/brackets_controller.rb:24:in `block in create'
+app/controllers/brackets_controller.rb:23:in `each'
+app/controllers/brackets_controller.rb:23:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:12:13 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.2ms | Allocations: 2372)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 17772)
+Completed 200 OK in 65ms (Views: 46.4ms | ActiveRecord: 2.0ms | Allocations: 22809)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:12:15 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.7ms | Allocations: 5414)
+
+
+  
+NoMethodError (undefined method `%' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "b", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "c", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "d", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "e", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "f", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "g", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "h", bracket_id: nil>]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `block in create'
+app/controllers/brackets_controller.rb:23:in `each'
+app/controllers/brackets_controller.rb:23:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:13:50 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.0ms | Allocations: 2360)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2431)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 17760)
+Completed 200 OK in 65ms (Views: 46.6ms | ActiveRecord: 2.1ms | Allocations: 22858)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:13:52 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.3ms | Allocations: 5412)
+
+
+  
+NoMethodError (undefined method `modulo' for [#<Player id: nil, created_at: nil, updated_at: nil, name: "a", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "b", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "c", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "d", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "e", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "f", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "g", bracket_id: nil>, #<Player id: nil, created_at: nil, updated_at: nil, name: "h", bracket_id: nil>]:Array):
+  
+app/controllers/brackets_controller.rb:24:in `block in create'
+app/controllers/brackets_controller.rb:23:in `each'
+app/controllers/brackets_controller.rb:23:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:15:05 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.9ms | Allocations: 2358)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2429)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 17765)
+Completed 200 OK in 74ms (Views: 52.5ms | ActiveRecord: 3.3ms | Allocations: 22823)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:15:07 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms | Allocations: 4212)
+
+
+  
+TypeError (Player can't be coerced into Integer):
+  
+app/controllers/brackets_controller.rb:24:in `modulo'
+app/controllers/brackets_controller.rb:24:in `block in create'
+app/controllers/brackets_controller.rb:23:in `each'
+app/controllers/brackets_controller.rb:23:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:15:57 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.3ms | Allocations: 2386)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2457)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 17793)
+Completed 200 OK in 71ms (Views: 50.9ms | ActiveRecord: 2.5ms | Allocations: 22895)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:15:59 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.2ms | Allocations: 6863)
+
+
+  
+NameError (undefined local variable or method `players_count' for #<BracketsController:0x00000000040420>
+Did you mean?  player_count):
+  
+app/controllers/brackets_controller.rb:27:in `block in create'
+app/controllers/brackets_controller.rb:26:in `each'
+app/controllers/brackets_controller.rb:26:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:16:30 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.0ms | Allocations: 2396)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2467)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 17796)
+Completed 200 OK in 70ms (Views: 50.8ms | ActiveRecord: 2.7ms | Allocations: 22903)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:16:32 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 4206)
+
+
+  
+TypeError (Player can't be coerced into Integer):
+  
+app/controllers/brackets_controller.rb:27:in `modulo'
+app/controllers/brackets_controller.rb:27:in `block in create'
+app/controllers/brackets_controller.rb:26:in `each'
+app/controllers/brackets_controller.rb:26:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:19:20 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 2.8ms | Allocations: 2388)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2459)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 17788)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 22890)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:19:21 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:19:21.546300"], ["updated_at", "2023-09-19 23:19:21.546300"], ["player", nil], ["team", nil]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.554325"], ["updated_at", "2023-09-19 23:19:21.554325"], ["name", "a"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.559092"], ["updated_at", "2023-09-19 23:19:21.559092"], ["name", "b"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.564000"], ["updated_at", "2023-09-19 23:19:21.564000"], ["name", "c"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.568243"], ["updated_at", "2023-09-19 23:19:21.568243"], ["name", "d"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.572298"], ["updated_at", "2023-09-19 23:19:21.572298"], ["name", "e"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.594166"], ["updated_at", "2023-09-19 23:19:21.594166"], ["name", "f"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.623792"], ["updated_at", "2023-09-19 23:19:21.623792"], ["name", "g"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:19:21.647730"], ["updated_at", "2023-09-19 23:19:21.647730"], ["name", "h"], ["bracket_id", 4]]
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `create'
+Redirected to http://127.0.0.1:3000/brackets/4
+Completed 302 Found in 157ms (ActiveRecord: 22.1ms | Allocations: 13476)
+
+
+Started GET "/brackets/4" for 127.0.0.1 at 2023-09-19 19:19:21 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mBracket Load (10.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:38:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/_bracket_tree.html.erb (Duration: 85.8ms | Allocations: 3545)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 98.5ms | Allocations: 4028)
+  Rendered layout layouts/application.html.erb (Duration: 99.5ms | Allocations: 4100)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 10.3ms | Allocations: 5711)
+
+
+  
+ActionView::Template::Error (undefined method `rounds' for #<Bracket id: 4, name: nil, position: nil, created_at: "2023-09-19 23:19:21.546300000 +0000", updated_at: "2023-09-19 23:19:21.546300000 +0000", player: nil, team: nil>):
+    1: <% output = '' %>
+    2: <% @bracket.rounds.each do |round| %>
+    3:   <% round.matches.each do |match| %>
+    4:     <% output += '<div class="match">' %>
+    5:     <% output += "<span>#{match.participant1.name}</span>" %>
+  
+app/views/brackets/_bracket_tree.html.erb:2
+app/views/brackets/show.html.erb:5
+app/views/brackets/show.html.erb:1
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:19:54 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.8ms | Allocations: 2410)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2481)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 17809)
+Completed 200 OK in 81ms (Views: 61.7ms | ActiveRecord: 2.5ms | Allocations: 22909)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:19:56 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.3ms | Allocations: 6317)
+
+
+  
+NoMethodError (undefined method `rounds=' for #<Bracket id: nil, name: nil, position: nil, created_at: nil, updated_at: nil, player: nil, team: nil>):
+  
+app/controllers/brackets_controller.rb:26:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:22:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230919232122_add_rounds_to_brackets.rb
+
+
+):
+  
+activerecord (7.0.7.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.7.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.7.2) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-09-19 19:22:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRoundsToBrackets (20230919232122)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "brackets" ADD "rounds" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230919232122"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:22:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 12.0ms | Allocations: 2380)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2451)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 17792)
+Completed 200 OK in 110ms (Views: 73.6ms | ActiveRecord: 1.5ms | Allocations: 34788)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:22:20 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.3ms | Allocations: 5966)
+
+
+  
+NoMethodError (undefined method `attr_accessible' for #<BracketsController:0x00000000057198>):
+  
+app/controllers/brackets_controller.rb:21:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:22:50 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.2ms | Allocations: 2386)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2457)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 17794)
+Completed 200 OK in 89ms (Views: 69.3ms | ActiveRecord: 2.1ms | Allocations: 23078)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:22:52 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.3ms | Allocations: 6039)
+
+
+  
+NoMethodError (undefined method `attr_accessible' for #<BracketsController:0x0000000005ca08>):
+  
+app/controllers/brackets_controller.rb:21:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:24:26 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 4.5ms | Allocations: 2390)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2461)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 17790)
+Completed 200 OK in 46ms (Views: 32.0ms | ActiveRecord: 1.5ms | Allocations: 23093)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:24:28 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.3ms | Allocations: 5943)
+
+
+  
+NoMethodError (undefined method `attr_accessible' for #<BracketsController:0x000000000622c8>):
+  
+app/controllers/brackets_controller.rb:21:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:24:41 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.3ms | Allocations: 2358)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2429)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 17794)
+Completed 200 OK in 70ms (Views: 49.3ms | ActiveRecord: 2.2ms | Allocations: 23091)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:24:42 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team", "rounds") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:24:42.523237"], ["updated_at", "2023-09-19 23:24:42.523237"], ["player", nil], ["team", nil], ["rounds", 3]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.530953"], ["updated_at", "2023-09-19 23:24:42.530953"], ["name", "a"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.535943"], ["updated_at", "2023-09-19 23:24:42.535943"], ["name", "b"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.540957"], ["updated_at", "2023-09-19 23:24:42.540957"], ["name", "c"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.545323"], ["updated_at", "2023-09-19 23:24:42.545323"], ["name", "d"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.549269"], ["updated_at", "2023-09-19 23:24:42.549269"], ["name", "e"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.553690"], ["updated_at", "2023-09-19 23:24:42.553690"], ["name", "f"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.557222"], ["updated_at", "2023-09-19 23:24:42.557222"], ["name", "g"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:24:42.561237"], ["updated_at", "2023-09-19 23:24:42.561237"], ["name", "h"], ["bracket_id", 5]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+Redirected to http://127.0.0.1:3000/brackets/5
+Completed 302 Found in 70ms (ActiveRecord: 10.6ms | Allocations: 13483)
+
+
+Started GET "/brackets/5" for 127.0.0.1 at 2023-09-19 19:24:42 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:37:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/_bracket_tree.html.erb (Duration: 4.0ms | Allocations: 1947)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2061)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2133)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 3630)
+
+
+  
+ActionView::Template::Error (undefined method `each' for 3:Integer):
+    1: <% output = '' %>
+    2: <% @bracket.rounds.each do |round| %>
+    3:   <% round.matches.each do |match| %>
+    4:     <% output += '<div class="match">' %>
+    5:     <% output += "<span>#{match.participant1.name}</span>" %>
+  
+app/views/brackets/_bracket_tree.html.erb:2
+app/views/brackets/show.html.erb:5
+app/views/brackets/show.html.erb:1
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:25:20 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 8.1ms | Allocations: 1943)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2244)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 5312)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 6532)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:25:21 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mBracket Create (0.6ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team", "rounds") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:25:21.367473"], ["updated_at", "2023-09-19 23:25:21.367473"], ["player", nil], ["team", nil], ["rounds", 3]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.373691"], ["updated_at", "2023-09-19 23:25:21.373691"], ["name", "a"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.378545"], ["updated_at", "2023-09-19 23:25:21.378545"], ["name", "b"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.382391"], ["updated_at", "2023-09-19 23:25:21.382391"], ["name", "c"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.385911"], ["updated_at", "2023-09-19 23:25:21.385911"], ["name", "d"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.389850"], ["updated_at", "2023-09-19 23:25:21.389850"], ["name", "e"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.393453"], ["updated_at", "2023-09-19 23:25:21.393453"], ["name", "f"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.397444"], ["updated_at", "2023-09-19 23:25:21.397444"], ["name", "g"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:25:21.400858"], ["updated_at", "2023-09-19 23:25:21.400858"], ["name", "h"], ["bracket_id", 6]]
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:27:in `create'
+Redirected to http://127.0.0.1:3000/brackets/6
+Completed 302 Found in 51ms (ActiveRecord: 8.4ms | Allocations: 10583)
+
+
+Started GET "/brackets/6" for 127.0.0.1 at 2023-09-19 19:25:21 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:37:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/show.html.erb within layouts/application (Duration: 31.6ms | Allocations: 3555)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 3626)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms | Allocations: 4485)
+
+
+  
+ActionView::Template::Error (undefined method `matches_for_round' for #<Bracket id: 6, name: nil, position: nil, created_at: "2023-09-19 23:25:21.367473000 +0000", updated_at: "2023-09-19 23:25:21.367473000 +0000", player: nil, team: nil, rounds: 3>):
+    3:   <% @bracket.rounds.times do |round_number| %>
+    4:     <div class="round">
+    5:       <h3>Round <%= round_number + 1 %></h3>
+    6:       <% @bracket.matches_for_round(round_number).each do |match| %>
+    7:         <div class="match">
+    8:           <span><%= match.participant1.name %></span>
+    9:           <span>vs</span>
+  
+app/views/brackets/show.html.erb:6
+app/views/brackets/show.html.erb:3:in `times'
+app/views/brackets/show.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:29:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230919232709_add_matches_to_brackets.rb
+
+
+):
+  
+activerecord (7.0.7.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.7.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.7.2) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-09-19 19:30:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddMatchesToBrackets (20230919232709)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "brackets" ADD "matches" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230919232709"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:30:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 6.4ms | Allocations: 2396)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2467)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 17796)
+Completed 200 OK in 87ms (Views: 45.9ms | ActiveRecord: 1.6ms | Allocations: 35089)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:30:33 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 3958)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Player(#225400) expected, got {:login=>"Player0", :seed_value=>0} which is an instance of Hash(#2360)):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:31:36 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.5ms | Allocations: 1906)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2207)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 5276)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 6512)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:31:37 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1439)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Player(#225400) expected, got {:login=>"Player0", :seed_value=>0} which is an instance of Hash(#2360)):
+  
+app/controllers/brackets_controller.rb:24:in `create'
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:34:01 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.7ms | Allocations: 2344)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2415)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 17732)
+Completed 200 OK in 67ms (Views: 46.3ms | ActiveRecord: 2.1ms | Allocations: 23311)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:34:03 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mBracket Create (0.6ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team", "rounds", "matches") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:34:03.526064"], ["updated_at", "2023-09-19 23:34:03.526064"], ["player", nil], ["team", nil], ["rounds", 3], ["matches", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.532324"], ["updated_at", "2023-09-19 23:34:03.532324"], ["name", "a"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.536581"], ["updated_at", "2023-09-19 23:34:03.536581"], ["name", "b"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.540700"], ["updated_at", "2023-09-19 23:34:03.540700"], ["name", "c"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.544820"], ["updated_at", "2023-09-19 23:34:03.544820"], ["name", "d"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.548694"], ["updated_at", "2023-09-19 23:34:03.548694"], ["name", "e"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.552780"], ["updated_at", "2023-09-19 23:34:03.552780"], ["name", "f"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.556724"], ["updated_at", "2023-09-19 23:34:03.556724"], ["name", "g"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:03.561034"], ["updated_at", "2023-09-19 23:34:03.561034"], ["name", "h"], ["bracket_id", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+Redirected to http://127.0.0.1:3000/brackets/7
+Completed 302 Found in 66ms (ActiveRecord: 11.8ms | Allocations: 13430)
+
+
+Started GET "/brackets/7" for 127.0.0.1 at 2023-09-19 19:34:03 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:40:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2134)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 3753)
+
+
+  
+ActionView::Template::Error (undefined method `each' for 7:Integer):
+    3:   <% @bracket.rounds.times do |round_number| %>
+    4:     <div class="round">
+    5:       <h3>Round <%= round_number + 1 %></h3>
+    6:       <% @bracket.matches.each do |match| %>
+    7:         <div class="match">
+    8:           <span><%= match.participant1.name %></span>
+    9:           <span>vs</span>
+  
+app/views/brackets/show.html.erb:6
+app/views/brackets/show.html.erb:3:in `times'
+app/views/brackets/show.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:34:39 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.8ms | Allocations: 1933)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 5302)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 6522)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:34:41 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mBracket Create (0.7ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team", "rounds", "matches") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:34:41.329905"], ["updated_at", "2023-09-19 23:34:41.329905"], ["player", nil], ["team", nil], ["rounds", 3], ["matches", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.338840"], ["updated_at", "2023-09-19 23:34:41.338840"], ["name", "a"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.343486"], ["updated_at", "2023-09-19 23:34:41.343486"], ["name", "b"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.348609"], ["updated_at", "2023-09-19 23:34:41.348609"], ["name", "c"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.353063"], ["updated_at", "2023-09-19 23:34:41.353063"], ["name", "d"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.357890"], ["updated_at", "2023-09-19 23:34:41.357890"], ["name", "e"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.362147"], ["updated_at", "2023-09-19 23:34:41.362147"], ["name", "f"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.365945"], ["updated_at", "2023-09-19 23:34:41.365945"], ["name", "g"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:34:41.370899"], ["updated_at", "2023-09-19 23:34:41.370899"], ["name", "h"], ["bracket_id", 8]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+Redirected to http://127.0.0.1:3000/brackets/8
+Completed 302 Found in 61ms (ActiveRecord: 9.0ms | Allocations: 10529)
+
+
+Started GET "/brackets/8" for 127.0.0.1 at 2023-09-19 19:34:41 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:40:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  Rendered brackets/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2104)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2175)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms | Allocations: 3034)
+
+
+  
+ActionView::Template::Error (undefined method `participant1' for 0:Integer):
+     5:       <h3>Round <%= round_number + 1 %></h3>
+     6:       <% @bracket.matches.times do |match| %>
+     7:         <div class="match">
+     8:           <span><%= match.participant1.name %></span>
+     9:           <span>vs</span>
+    10:           <span><%= match.participant2.name %></span>
+    11:         </div>
+  
+app/views/brackets/show.html.erb:8
+app/views/brackets/show.html.erb:6:in `times'
+app/views/brackets/show.html.erb:6
+app/views/brackets/show.html.erb:3:in `times'
+app/views/brackets/show.html.erb:3
+Started GET "/brackets/new" for 127.0.0.1 at 2023-09-19 19:40:28 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 7.0ms | Allocations: 1873)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 5231)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 6451)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-09-19 19:40:29 -0400
+Processing by BracketsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mBracket Create (0.9ms)[0m  [1m[32mINSERT INTO "brackets" ("name", "position", "created_at", "updated_at", "player", "team", "rounds", "matches") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["position", nil], ["created_at", "2023-09-19 23:40:29.998742"], ["updated_at", "2023-09-19 23:40:29.998742"], ["player", nil], ["team", nil], ["rounds", 3], ["matches", 7]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.008599"], ["updated_at", "2023-09-19 23:40:30.008599"], ["name", "a"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.012798"], ["updated_at", "2023-09-19 23:40:30.012798"], ["name", "b"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.017321"], ["updated_at", "2023-09-19 23:40:30.017321"], ["name", "c"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.021197"], ["updated_at", "2023-09-19 23:40:30.021197"], ["name", "d"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.024756"], ["updated_at", "2023-09-19 23:40:30.024756"], ["name", "e"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.029115"], ["updated_at", "2023-09-19 23:40:30.029115"], ["name", "f"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.032768"], ["updated_at", "2023-09-19 23:40:30.032768"], ["name", "g"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("created_at", "updated_at", "name", "bracket_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2023-09-19 23:40:30.036921"], ["updated_at", "2023-09-19 23:40:30.036921"], ["name", "h"], ["bracket_id", 9]]
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/brackets_controller.rb:30:in `create'
+Redirected to http://127.0.0.1:3000/brackets/9
+Completed 302 Found in 57ms (ActiveRecord: 9.5ms | Allocations: 10525)
+
+
+Started GET "/brackets/9" for 127.0.0.1 at 2023-09-19 19:40:30 -0400
+Processing by BracketsController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:40:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."bracket_id" = ?[0m  [["bracket_id", 9]]
+  ↳ app/views/brackets/show.html.erb:4
+  Rendered brackets/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1967)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4733)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 5620)
+
+

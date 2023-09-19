@@ -1,0 +1,2 @@
+belongs_to: tournament
+has_many_and_belongs_to :players

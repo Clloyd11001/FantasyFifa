@@ -1,0 +1,12 @@
+<h2>Bracket Tree</h2>
+<div class="bracket-tree">
+  <% @bracket.matches.times do %>
+    <% player1 = @bracket.players.sample %>
+    <% player2 = @bracket.players.sample %>
+    <div class="match">
+      <span><%= player1.name %></span>
+      <span>vs</span>
+      <span><%= player2.name %></span>
+    </div>
+  <% end %>
+</div>

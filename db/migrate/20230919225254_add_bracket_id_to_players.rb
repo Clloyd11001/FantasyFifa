@@ -1,0 +1,5 @@
+class AddBracketIdToPlayers < ActiveRecord::Migration[7.0]
+  def change
+    add_reference :players, :bracket, null: false, foreign_key: true
+  end
+end

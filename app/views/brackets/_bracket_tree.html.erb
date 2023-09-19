@@ -1,0 +1,11 @@
+<% output = '' %>
+<% @bracket.rounds.each do |round| %>
+  <% round.matches.each do |match| %>
+    <% output += '<div class="match">' %>
+    <% output += "<span>#{match.participant1.name}</span>" %>
+    <% output += '<span>vs</span>' %>
+    <% output += "<span>#{match.participant2.name}</span>" %>
+    <% output += '</div>' %>
+  <% end %>
+<% end %>
+<%= output.html_safe %>

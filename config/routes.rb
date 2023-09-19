@@ -5,11 +5,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :brackets do
-    collection do
-      post 'create_bracket'
-    end
-  end
+  resources :brackets
 
   # config/routes.rb
   post '/test_render_bracket', to: 'brackets#test_render_bracket'

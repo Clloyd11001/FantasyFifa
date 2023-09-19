@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_17_222852) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_19_232709) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -26,6 +26,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_17_222852) do
     t.datetime "updated_at", null: false
     t.string "player"
     t.string "team"
+    t.integer "rounds"
+    t.integer "matches"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -42,7 +44,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_17_222852) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.integer "bracket_id", null: false
+    t.index ["bracket_id"], name: "index_players_on_bracket_id"
   end
 
   add_foreign_key "comments", "articles"
+  add_foreign_key "players", "brackets"
 end

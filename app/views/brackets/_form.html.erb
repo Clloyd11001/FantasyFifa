@@ -1,7 +1,7 @@
 <%= form_with model: @bracket, url: brackets_path, method: :post do |form| %>
   <!-- Form fields for bracket data here -->
 
-  <% 12.times do |i| %>
+  <% 8.times do |i| %>
     <div class="field">
       <%= form.label "players[#{i}][name]", "Player #{i + 1} Name" %>
       <%= form.text_field "players[#{i}][name]" %>
@@ -11,6 +11,6 @@
   <!-- Add more bracket fields as needed -->
 
   <div class="actions">
-    <%= form.submit "Create Players" %>
+    <%= form.submit "Create Bracket" %>
   </div>
 <% end %>
