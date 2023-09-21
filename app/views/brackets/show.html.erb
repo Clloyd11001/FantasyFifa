@@ -1,12 +1,14 @@
-<h2>Bracket Tree</h2>
-<div class="bracket-tree">
-  <% @bracket.matches.times do %>
-    <% player1 = @bracket.players.sample %>
-    <% player2 = @bracket.players.sample %>
-    <div class="match">
-      <span><%= player1.name %></span>
-      <span>vs</span>
-      <span><%= player2.name %></span>
-    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/assets/application.js"></script> <!-- Include your custom JavaScript file -->
+
+<% output = '' %>
+<% @bracket.rounds.times do |round| %>
+  <% round.matches.each do |match| %>
+    <% output += '<div class="match">' %>
+    <% output += "<span>#{match.participant1.name}</span>" %>
+    <% output += '<span>vs</span>' %>
+    <% output += "<span>#{match.participant2.name}</span>" %>
+    <% output += '</div>' %>
   <% end %>
-</div>
+<% end %>
+<%= output.html_safe %>

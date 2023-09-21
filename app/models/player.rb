@@ -12,6 +12,8 @@ class Player < ApplicationRecord
     # Define validations (if needed)
     # Example: Validate that a player must have a name
     validates :name, presence: true
+
+   # validates :team_name, presence: true
   
     # Other player-related logic, methods, or callbacks can be added here
   end
