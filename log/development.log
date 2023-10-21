@@ -11674,3 +11674,63 @@ Processing by BracketsController#create as HTML
 Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 839)
 
 
+Started GET "/" for 127.0.0.1 at 2023-10-21 11:43:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4316)
+  Rendered layout layouts/application.html.erb (Duration: 138.0ms | Allocations: 45232)
+Completed 200 OK in 180ms (Views: 145.1ms | ActiveRecord: 0.4ms | Allocations: 58194)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-10-21 11:43:32 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 5.3ms | Allocations: 3629)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3983)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6789)
+Completed 200 OK in 32ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 26828)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-10-21 11:43:39 -0400
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1270)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-21 11:48:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."status" = ?[0m  [["status", "public"]]
+  ↳ app/models/concerns/visible.rb:12:in `public_count'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3935)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 41403)
+Completed 200 OK in 80ms (Views: 57.3ms | ActiveRecord: 1.0ms | Allocations: 51576)
+
+
+Started GET "/brackets/new" for 127.0.0.1 at 2023-10-21 11:48:38 -0400
+Processing by BracketsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/new.html.erb within layouts/application
+  Rendered brackets/_form.html.erb (Duration: 2.9ms | Allocations: 3367)
+  Rendered brackets/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3716)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6511)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 26396)
+
+
+Started POST "/brackets" for 127.0.0.1 at 2023-10-21 11:48:45 -0400
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"players"=>{"0"=>{"name"=>"a"}, "1"=>{"name"=>"b"}, "2"=>{"name"=>"c"}, "3"=>{"name"=>"d"}, "4"=>{"name"=>"e"}, "5"=>{"name"=>"f"}, "6"=>{"name"=>"g"}, "7"=>{"name"=>"h"}}}, "commit"=>"Create Bracket"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1245)
+
+

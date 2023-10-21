@@ -28,8 +28,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Build three-section data structure 
+#gem "bracket_tree"
 gem "bracket_tree"
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
